@@ -1,0 +1,243 @@
+.header{
+    background: #fe7d25;
+    padding-bottom: 7em;
+    .box{
+        display: flex;
+        justify-content: flex-start;
+        padding: 1em 1em;
+        .left{
+            width: 25%;
+            padding-right: 1em;
+            img{
+                width: 100%;
+            }
+        }
+        .rigth{
+            width: 40%;
+            h1{
+                padding-top: 7px;
+                font-size: 1.5em;
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+    }
+    @media screen and (max-width:320px) {
+        &{
+            .box{
+                .left{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+
+// 我的订单
+.order{
+    margin-top: -7em;
+    .list{
+        padding: 1em;
+        .box{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            background: #f6f6f6;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 4em;
+            line-height: 4em;
+            padding: 0em 1em;
+            .left{
+                p{
+                    font-size: 1.5em;
+                }
+            }
+            .rigth{
+                color: #999999;
+            }
+        }
+        .cot{
+            background: #f6f6f6;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            .demo{
+                width: 23%;
+                text-align: center;
+                a{
+                    color: #000;
+                    img{
+                        width: 70%;
+                    }
+                    p{
+                        padding-top: .5em;
+                        font-size: 1.3em;
+                    }
+                }
+                
+            }
+        }
+    }
+    @media screen and (max-width:320px) {
+        &{
+           .list{
+               .box{
+                   .left{
+                       p{
+                           font-size: 1.2em;
+                       }
+                   }
+               }
+               .cot{
+                   .demo{
+                       a{
+                           img{
+                               width: 60%;
+                           }
+                           p{
+                               font-size: 1.1em;
+                           }
+                       }
+                   }
+               }
+           } 
+        }
+    }
+}
+
+// 设置
+.set{
+    padding: 0em 1em 5em;
+    .box{
+        .cot{
+            display: flex;
+            justify-content: space-between;
+            background: #f6f6f6;
+            padding: 1em;
+            border-bottom: 1px solid #ccc;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            .left{
+                width: 15%;
+                img{
+                    width: 80%;
+                }
+            }
+            .center{
+                width: 75%;
+                h2{
+                    font-size: 1.5em;
+                }
+            }
+            .right{
+                span{
+                    padding-top: 12px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .cot2{
+            display: flex;
+            justify-content: space-between;
+            background: #f6f6f6;
+            padding: 1em;
+            border-bottom: 1px solid #ccc;
+            .left{
+                width: 15%;
+                img{
+                    width: 80%;
+                }
+            }
+            .center{
+                width: 75%;
+                h2{
+                    font-size: 1.5em;
+                }
+            }
+            .right{
+                span{
+                    padding-top: 12px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .cot3{
+            display: flex;
+            justify-content: space-between;
+            background: #f6f6f6;
+            padding: 1em;
+            border-bottom: 1px solid #ccc;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            .left{
+                width: 15%;
+                img{
+                    width: 80%;
+                }
+            }
+            .center{
+                width: 75%;
+                h2{
+                    font-size: 1.5em;
+                }
+            }
+            .right{
+                span{
+                    padding-top: 12px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:320px) {
+        &{
+            .box{
+                .cot{
+                    .center{
+                        h2{
+                            font-size: 1.3em;
+                        }
+                    }
+                    .right{
+                        span{
+                            font-size: 1.3em;
+                            padding-top: 9px;
+                        }
+                    }
+                }
+                .cot2{
+                    .center{
+                        h2{
+                            font-size: 1.3em;
+                        }
+                    }
+                    .right{
+                        span{
+                            font-size: 1.3em;
+                            padding-top: 9px;
+                        }
+                    }
+                }
+                .cot3{
+                    .center{
+                        h2{
+                            font-size: 1.3em;
+                        }
+                    }
+                    .right{
+                        span{
+                            font-size: 1.3em;
+                            padding-top: 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

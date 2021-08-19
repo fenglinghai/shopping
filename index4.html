@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+
+    <!-- reset.less -->
+    <link rel="stylesheet/less" href="./assets/css/reset.less" />
+
+    <!-- common.less -->
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+
+    <!-- index.less -->
+    <link rel="stylesheet/less" href="./assets/css/index4.less" />
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="box">
+            <div class="left">
+                <img src="./assets/images/toxi1.png" alt="">
+            </div>
+            <div class="rigth">
+                <h1>用户的名字</h1>
+                <p>可用余额： 999999999</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 我的订单 -->
+    <div class="order">
+        <div class="list">
+            <div class="box">
+                <div class="left">
+                    <p>我的订单</p>
+                </div>
+                <div class="rigth">
+                    <span>查看全部</span>
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+
+            <div class="cot">
+                <div class="demo">
+                   <a href="javascript:void(0)">
+                        <img src="./assets/images/4.png" alt="">
+                        <p>待付款</p>
+                   </a>
+                </div>
+                <div class="demo">
+                    <a href="javascript:void(0)">
+                        <img src="./assets/images/5.png" alt="">
+                        <p>待发货</p>
+                   </a>
+                </div>
+                <div class="demo">
+                    <a href="javascript:void(0)">
+                        <img src="./assets/images/6.png" alt="">
+                        <p>待收货</p>
+                   </a>
+                </div>
+                <div class="demo">
+                    <a href="javascript:void(0)">
+                        <img src="./assets/images/7.png" alt="">
+                        <p>退款</p>
+                   </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 设置 -->
+    <div class="set">
+        <div class="box">
+            <div class="cot">
+                <div class="left">
+                    <img src="./assets/images/icon6.png" alt="">
+                </div>
+                <div class="center">
+                    <h2>账户中心</h2>
+                </div>
+                <div class="right">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+            <div class="cot2">
+                <div class="left">
+                    <img src="./assets/images/icon7.png" alt="">
+                </div>
+                <div class="center">
+                    <h2>我的优惠价券</h2>
+                </div>
+                <div class="right">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+            <div class="cot2">
+                <div class="left">
+                    <img src="./assets/images/icon8.png" alt="">
+                </div>
+                <div class="center">
+                    <h2>我的收藏</h2>
+                </div>
+                <div class="right">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+            <div class="cot2">
+                <div class="left">
+                    <img src="./assets/images/icon9.png" alt="">
+                </div>
+                <div class="center">
+                    <h2>我的浏览</h2>
+                </div>
+                <div class="right">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+            <div class="cot2">
+                <div class="left">
+                    <img src="./assets/images/icon10.png" alt="">
+                </div>
+                <div class="center">
+                    <h2>客户服务</h2>
+                </div>
+                <div class="right">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+            <div class="cot3">
+                <div class="left">
+                    <img src="./assets/images/icon6.png" alt="">
+                </div>
+                <div class="center">
+                    <h2>设置</h2>
+                </div>
+                <div class="right">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <a href="./index.html" class="item">
+          <span class="glyphicon glyphicon-home"></span>
+          <span>首页</span>
+        </a>
+        <a href="javascript:void(0)" class="item">
+          <span class="glyphicon glyphicon-th-large"></span>
+          <span>分类</span>
+        </a>
+        <a href="./index3.html" class="item">
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+          <span>购物车</span>
+        </a>
+        <a href="javascript:void(0)" class="item2">
+          <span class="glyphicon glyphicon-user"></span>
+          <span>我的</span>
+        </a>
+    </footer>
+
+</body>
+</html>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/less.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/wow.min.repeat.js"></script>
+
+<script>
+    var isTouch=('ontouchstart' in window);
+
+    if(isTouch){
+        $(".carousel").on('touchstart', function(e){
+            var that=$(this);
+            var touch = e.originalEvent.changedTouches[0];
+            var startX = touch.pageX;
+            var startY = touch.pageY;
+            $(document).on('touchmove',function(e){
+                touch = e.originalEvent.touches[0] ||e.originalEvent.changedTouches[0];
+                var endX=touch.pageX - startX;
+                var endY=touch.pageY - startY;
+                if(Math.abs(endY)<Math.abs(endX)){
+                    if(endX > 10){
+                        $(this).off('touchmove');
+                        that.carousel('prev');
+                    }else if (endX < -10){
+                        $(this).off('touchmove');
+                        that.carousel('next');
+                    }
+                    return false;
+                }        
+            });
+        });
+        $(document).on('touchend',function(){
+            $(this).off('touchmove');
+        });
+    }
+</script>
